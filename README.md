@@ -1,25 +1,48 @@
 # Named Entity Recognition
 
-## AIM
 
+## AIM
 To develop an LSTM-based model for recognizing the named entities in the text.
 
 ## Problem Statement and Dataset
+Build a Named Entity Recognition (NER) model that can automatically identify and classify entities like names of people, locations, organizations, and other important terms from text. The goal is to tag each word in a sentence with its corresponding entity label.
 
 
-## DESIGN STEPS
+### Dataset Name: ner_dataset.csv
 
-### STEP 1:
+Size: Contains thousands of words grouped into sentences with entity annotations.
 
-### STEP 2:
+#### Columns:
 
-### STEP 3:
+Sentence # – Sentence ID
 
-Write your own steps
+Word – Individual word/token in the sentence
+
+POS – Part-of-speech tag
+
+Tag – Named entity tag (e.g., O, B-PER, I-LOC, etc.)
+
+
+## DESIGN STEPS:
+### STEP 1
+Import necessary libraries and set up the device (CPU or GPU).
+### STEP 2
+Load the NER dataset and fill missing values.
+### STEP 3
+Create word and tag dictionaries for encoding.
+### STEP 4
+Group words into sentences and encode them into numbers.
+### STEP 5
+Build a BiLSTM model for sequence tagging.
+### STEP 6
+Train the model using the training data.
+### STEP 7
+Evaluate the model performance on test data.
 
 ## PROGRAM
-### Name:
-### Register Number:
+### Name: K SANTHAN KUMAR
+### Register Number: 212223240065
+
 ```python
 class BiLSTMTagger(nn.Module):
     # Include your code here
